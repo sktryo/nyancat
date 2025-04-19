@@ -201,7 +201,7 @@
       setProgress(0.1);
 
       const scaffolding = new Scaffolding.Scaffolding();
-      scaffolding.width = 480;
+      scaffolding.width = 640;
       scaffolding.height = 360;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
@@ -220,11 +220,11 @@
         videoProvider: vm.runtime.ioDevices.video.provider
       };
 
-      scaffolding.setUsername("player####".replace(/#/g, () => Math.floor(Math.random() * 10)));
+      scaffolding.setUsername("nyanyanyanyanyanyanyanyanyanyanyanyanyanya".replace(/#/g, () => Math.floor(Math.random() * 10)));
       scaffolding.setAccentColor("#ff4c4c");
 
       try {
-        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@Nyancat.sb3"));
+        scaffolding.addCloudProvider(new Scaffolding.Cloud.WebSocketProvider(["wss://clouddata.turbowarp.org","wss://clouddata.turbowarp.xyz"], "p4-@プロジェクト.sb3"));
       } catch (error) {
         console.error(error);
       }
